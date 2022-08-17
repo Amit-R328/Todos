@@ -1,0 +1,60 @@
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    input,
+    button {
+        padding: 0.5rem;
+        font-size: 2rem;
+        border: none;
+        background: $clr6;
+    }
+
+    button {
+        color: $clr4;
+        background-color: $clr5;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #f5c4b2;
+            color: $clr6;
+        }
+    }
+
+    .select {
+        margin: 1rem;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            content: "\25BC";
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1rem;
+            background: $clr5;
+            cursor: pointer;
+            pointer-events: none;
+        }
+
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -ms-appearance: none;
+            appearance: none;
+            outline: 0;
+            box-shadow: none;
+            border: 0 !important;
+            background-image: none;
+            color: $clr5;
+            cursor: pointer;
+            font-family: "Poppins", sans-serif;
+            width: 12rem;
+            padding: 1rem;
+        }
+    }
+
+}
