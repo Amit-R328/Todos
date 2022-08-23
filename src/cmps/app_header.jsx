@@ -8,14 +8,14 @@ import { UserMsg } from "./user-msg";
 
 
 const AppHeader = () => {
-    
-   
+
+
 
     return (
         <section className="header-container">
-            <div className="header-left-side">left</div>
-            <div className="header-main">Header</div>
-            <div className="header-right-side">right</div>
+            <div className="header-left-side"></div>
+            <div className="header-main"></div>
+            <div className="header-right-side"></div>
             {/* <UserMsg /> */}
         </section>
     )
